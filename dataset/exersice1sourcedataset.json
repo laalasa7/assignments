@@ -1,0 +1,23 @@
+{
+	"name": "exersice1sourcedataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobDataStorageForBulkCopy",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "storage"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

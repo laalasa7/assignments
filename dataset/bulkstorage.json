@@ -1,0 +1,23 @@
+{
+	"name": "bulkstorage",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobDataStorageForBulkCopy",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "exercise1",
+				"container": "storage"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
